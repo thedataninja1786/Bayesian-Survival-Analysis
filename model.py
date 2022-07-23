@@ -15,7 +15,7 @@ class BS():
     for t in self.total_steps:
       if t not in event_steps:
         posteriors.append(posteriors[-1]) #probs are the same as before 
-        continue # in case the event is patient left -> continue 
+        continue # in the case the patient left -> continue 
 
       current_probs = []
       prior_entries = self.df[self.df[self.time] <= t]
